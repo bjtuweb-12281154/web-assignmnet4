@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+
+
+<title>iMovie-为你而生</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+<link href="../../docs-assets/ico/favicon.png" rel="shortcut icon">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="sticky-footer-navbar.css" rel="stylesheet">
+<style>
+	body
+	{
+		background:white;
+	
+	}
+	#container2{
+		width: 960px;
+		background:white;
+		margin:0px auto;
+	}
+
+	#header{
+		height: 309px;
+		width: 739px;
+		margin-top: 0px;
+		margin:0px auto;
+		background: url("images/header.png");
+	}
+
+/*	#recommend{
+		height: 300px;
+		/*background: white;*/
+	}*/
+	#main{
+		height:0px;
+		/*background: green;*/
+	}
+
+	#lside{
+		margin:0px auto;
+		float:left;
+		height: 350px;
+		width: 960px;
+		
+	}
+	
+	#upper{
+		float: left;
+		height: 300px;
+		width: 960px;
+		/*background: black;*/
+	}
+	
+/*	#middle{
+		float: left;
+		height: 300px;
+		width: 960px;
+		color: white;
+		/*background: green;*/
+	}
+*/
+	#down{
+		float: left;
+		height: 300px;
+		width: 960px;
+		/*background: black;*/
+	}
+
+	#rside{
+		float: right;
+		height: 350px;
+		width: 320px;
+		/*background: purple;*/
+	}
+
+	/*sliding box*/
+	*{ 
+		padding:0px; 
+		margin:0px; 
+	}
+	body{ 
+		//background:#D5DEE7;
+		padding:50px; 
+	}
+	a{ 	
+		color:#C8DCE5; 
+	}
+	h3{ 
+		margin:10px 10px 0 10px; 
+		color:#FFF; 
+		font:bold 18pt Arial, sans-serif; 
+		letter-spacing:-1px; 
+	}
+	.boxgrid{ 
+		width: 430px; 
+		height: 260px; 
+		margin:20px; 
+		background:#161613; 
+		border: solid 1px #FFF0F5;
+		overflow: hidden; 
+		position: relative;
+		float: left;
+	}
+	.boxgrid img{
+		position: absolute; 
+		top: 0; left: 0; 
+		border: 0; 
+	}
+	.boxgrid p{ 
+		padding: 0 10px; 
+		color:#afafaf; 
+		font-weight:bold; 
+		font:10pt "Lucida Grande", Arial, sans-serif; 
+	}
+	#box{float:left;position:relative;width:295px;}
+	.div1{}
+	.div2{position:fixed;_position:absolute;top:3px;z-index:295;}
+</style>
+</head>
+    <body>
+    	<div class = "navbar navbar-default navbar-fixed-top" role="navigation">
+    		<div class = "container">
+    			<div>
+    				<div class="navbar-header">
+						<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="homepage.php">iMovie</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+						<li class="active">
+						<a href="homepage.php">Home</a>
+						</li>
+						<li>
+						<a href="register.php">Register/Log in</a>
+						</li>
+	
+					</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class = "container" >
+    			<div id = "header"></div>
+    			<div id = "main"  style = "padding-left:100px">
+    			
+						<div id = "upper">
+							<!-- sliding box-country -->
+		    				<div class="boxgrid slidedown" >
+			 					<img class="cover" src="images/country.png"/> 
+			 					<h3>按语言分类</h3>
+			 					<p> According to languages<br/></p>
+			        			<form  action = "search_language.php" method="post" >
+								<p  style="color: white; line-height:120%">
+								<input type="checkbox" name = "language[]" value="印度语" />印度语&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="英语" />英语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="葡萄牙语" />葡萄牙语<br />
+								<input type="checkbox" name = "language[]" value="法语" />法语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="意大利语" />意大利语&nbsp
+								<input type="checkbox" name = "language[]" value="汉语" />汉语<br />
+								<input type="checkbox" name = "language[]" value="日语" />日语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="拉丁语" />拉丁语&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="德语" />德语<br />
+								<input type="checkbox" name = "language[]" value="韩语" />韩语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="俄语" />俄语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="波斯语" />波斯语<br />
+								<input type="checkbox" name = "language[]" value="粤语" />粤语&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="西班牙语" />西班牙语&nbsp&nbsp
+								<input type="checkbox" name = "language[]" value="瑞典语" />瑞典语<br />
+								<input type="checkbox" name = "language[]" value="捷克语" />捷克语
+								<div style = "padding-left:200px">
+								<button  class="btn btn-xs btn-default btn-block" style = "width: 50px;font-size: 80%"; type="submit">Search</button>
+								</div>
+								</p>
+			 					</form>
+							</div>
+							<!-- sliding box-age -->
+		    				<div class="boxgrid thecombo">
+		 						<img class="cover" src="images/age.png"/> 
+								<h3>按年代分类</h3>
+								<p>According to ages<br/>
+								<form action = "search_age.php" method="post">
+								<div style = "padding-left:20px">
+								<p style="color: white; line-height:120%" >
+								<input type="checkbox" value="1950s" name="age[]" />1950s&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 	
+								<input type="checkbox" value="1960s" name="age[]" />1960s	<br />
+								<input type="checkbox" value="1970s" name="age[]" />1970s&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" value="1980s" name="age[]" />1980s	<br />
+								<input type="checkbox" value="1990s" name="age[]" />1990s&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<input type="checkbox" value="2000s" name="age[]" />2000s 	<br />
+								<input type="checkbox" value="2010s" name="age[]" />2010s	
+								</p>
+								</div>
+								<div style = "padding-left:200px">
+								<button  class="btn btn-xs btn-default btn-block" style = "width: 50px;font-size: 80%"; type="submit">Search</button>
+								</div>
+								</form>
+								</p>
+							</div>
+							</div>
+						<div id = "down">
+							<!-- sliding box - category -->
+		    				<div class="boxgrid slideright">
+								 <img class="cover" src="images/type.png"/> 
+								 <h3>按类别分类</h3>
+								 <p>According to categories<br/>
+								 <form  action = "search_type.php" method="post">
+			    				 <p style="color: white; line-height:120%" >
+			    				 <input type="checkbox" name = "type[]" value = "喜剧" />喜剧&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			    				 <input type="checkbox" name = "type[]" value = "爱情"/>爱情&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			    				 <input type="checkbox" name = "type[]" value = "冒险"/>冒险<br />
+			    				 <input type="checkbox" name = "type[]" value = "科幻" />科幻&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			    				 <input type="checkbox" name = "type[]" value = "惊悚" />惊悚&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			    				 <input type="checkbox" name = "type[]" value = "灾难" />灾难<br />
+							 	 <input type="checkbox" name = "type[]" value = "动作" />动作&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								 <input type="checkbox" name = "type[]" value = "动画" />动画&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								 <input type="checkbox" name = "type[]" value = "犯罪" />犯罪<br />
+								 <input type="checkbox" name = "type[]" value = "战争" />战争&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								 <input type="checkbox" name = "type[]" value = "历史" />历史&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								 <input type="checkbox" name = "type[]" value = "西部" />西部<br />
+								 <input type="checkbox" name = "type[]" value = "剧情" />剧情
+								
+							<div style = "padding-left:200px">
+							<button  class="btn btn-xs btn-default btn-block" style = "width: 50px;font-size: 80%"; type="submit">Search</button>
+							</div>
+							</form>
+							 </p>
+							</div>
+							<!-- sliding box - Oscars -->
+							<div class="boxgrid slidedown">
+		 					<img class="cover" src="images/oscar.png"/> 
+		 					<h3>OScars</h3>
+		 					<form action = "search_oscar.php" method="post">
+		 					<p  style="color: white; line-height:120%" >
+							<input type="checkbox" name="oscar[]" value = "最佳影片" />最佳影片&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							<input type="checkbox" name="oscar[]" value = "最佳男主角" />最佳男主角<br />
+							<input type="checkbox" name="oscar[]" value = "最佳女主角" />最佳女主角&nbsp&nbsp&nbsp&nbsp	
+							<input type="checkbox" name="oscar[]" value = "最佳导演" />最佳导演<br />
+							<input type="checkbox" name="oscar[]" value = "最佳外语片" />最佳外语片&nbsp&nbsp&nbsp&nbsp	
+							<input type="checkbox" name="oscar[]" value = "最佳动画长片" />最佳动画长片<br />
+							<input type="checkbox" name="oscar[]" value = "最佳女配角" />最佳女配角&nbsp&nbsp&nbsp&nbsp	
+							<input type="checkbox" name="oscar[]" value = "最佳男配角" />最佳男配角<br />
+							</p>
+							<div style = "padding-left:200px">
+							<button  class="btn btn-xs btn-default btn-block" style = "width: 50px;font-size: 80%"; type="submit">Search</button>
+							</div>
+							</form>
+							</div>
+						</div>
+    			
+    			</div>
+    	</div>
+		</div>
+		<br />
+		<center>
+      	<div class="container">
+       		<p class="text-muted">Designed by Crazy.</p>
+      	</div>
+    </body>
+
+	<!-- sliding box	- country -->
+    <!-- sliding box - Oscar -->
+    <script type="text/javascript" src="library/jquery-1.3.1.js"></script>
+	<script type="text/javascript">
+ 	$(document).ready(function(){
+    //Diagnal Sliding
+    $('.boxgrid.slidedown').hover(function(){
+     $(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+    }, function() {
+     $(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+    });
+ 	})
+	</script>
+ 
+	<!-- sliding box - age -->
+	<script type="text/javascript" src="images/jquery-1.3.1.js"></script>
+	<script type="text/javascript">
+	 $(document).ready(function(){
+	    //Diagnal Sliding
+	    $('.boxgrid.thecombo').hover(function(){
+	     $(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,
+	duration:300});
+	    }, function() {
+	     $(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,
+	duration:300});
+	    });
+	 })
+	</script>
+
+	<!-- sliding box - category -->
+	<script type="text/javascript" src="images/jquery-1.3.1.js"></script>
+	<script type="text/javascript">
+	 $(document).ready(function(){
+	    //Horizontal Sliding
+	    $('.boxgrid.slideright').hover(function(){
+	     $(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
+	    }, function() {
+	     $(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+	    });
+	 })
+	</script>
+	
+	
+</html>
